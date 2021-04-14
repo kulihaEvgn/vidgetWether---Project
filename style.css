@@ -1,0 +1,104 @@
+html, body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('https://www.nastol.com.ua/pic/202104/1920x1080/nastol.com.ua-454844.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;   
+}
+
+.weather{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+.card{
+    background: rgba(0, 0, 0, 0.255);
+    padding: 100px 50px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 100px rgb(0, 0, 0);
+    transition: all 0.2s ease-in;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card__body_temp{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(233, 248, 255);
+    text-align: center;
+    letter-spacing: 2px;
+}
+.card__body{
+    margin-top: 15px;
+}
+.card__header_city{
+    font-size: 25px;
+    font-weight: 200;
+    color: rgb(209, 239, 250);
+    text-transform: uppercase;
+    text-align: center;
+}
+.card__footer{
+    margin-top: 80px;
+    text-align: center;
+}
+.card__footer_desc{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(255, 254, 254);
+    text-transform: uppercase;
+}
+.card__footer_wind{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 254, 254, 0.397);
+}
+
+
+.wether__city label{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.wether__city select{
+    margin-top: 15px;
+    width: 300px;
+    padding: 15px 0;
+    background-color: transparent;
+    box-shadow: 5px 3px 100px rgb(0, 0, 0);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.wether__city select:hover{
+    transform: scale(1.02);
+}
+
+.wether__city select option{
+    background: rgba(64 113 144);
+}
